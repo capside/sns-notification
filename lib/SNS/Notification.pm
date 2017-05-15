@@ -1,8 +1,7 @@
 package SNS::Notification;
   use Moose;
 
-  #ABSTRACT: Object to represent an SNS notification message
-  our $VERSION = '0.01';
+  our $VERSION = '0.02';
 
   has Timestamp => (is => 'ro', isa => 'Str', required => 1);
   has TopicArn => (is => 'ro', isa => 'Str', required => 1);
