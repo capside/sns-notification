@@ -1,21 +1,23 @@
 package SNS::Notification;
-  use Moose;
+  use Moo;
+  use Types::Standard qw/Str/;
 
   our $VERSION = '0.02';
 
-  has Timestamp => (is => 'ro', isa => 'Str', required => 1);
-  has TopicArn => (is => 'ro', isa => 'Str', required => 1);
-  has Type => (is => 'ro', isa => 'Str', required => 1);
-  has MessageId => (is => 'ro', isa => 'Str', required => 1);
-  has Message => (is => 'ro', isa => 'Str', required => 1);
-  has UnsubscribeURL => (is => 'ro', isa => 'Str', required => 1);
-  has Signature => (is => 'ro', isa => 'Str', required => 1);
-  has SignatureVersion => (is => 'ro', isa => 'Str', required => 1);
-  has Subject => (is => 'ro', isa => 'Str');
-  has SigningCertURL => (is => 'ro', isa => 'Str', required => 1);
+  has Timestamp => (is => 'ro', isa => Str, required => 1);
+  has TopicArn => (is => 'ro', isa => Str, required => 1);
+  has Type => (is => 'ro', isa => Str, required => 1);
+  has MessageId => (is => 'ro', isa => Str, required => 1);
+  has Message => (is => 'ro', isa => Str, required => 1);
+  has UnsubscribeURL => (is => 'ro', isa => Str, required => 1);
+  has Signature => (is => 'ro', isa => Str, required => 1);
+  has SignatureVersion => (is => 'ro', isa => Str, required => 1);
+  has Subject => (is => 'ro', isa => Str);
+  has SigningCertURL => (is => 'ro', isa => Str, required => 1);
 
 
-  __PACKAGE__->meta->make_immutable;
+  no Moo;
+  no Types::Standard;
 
 1;
 ### main pod documentation begin ###
