@@ -62,7 +62,7 @@ L<http://docs.aws.amazon.com/sns/latest/dg/SendMessageToSQS.html>
 
 =head1 COPYRIGHT and LICENSE
 
-Copyright (c) 2016 by CAPSiDE
+Copyright (c) 2020 by Jose Luis Martinez
 
 This code is distributed under the Apache 2 License. The full text of the license can be found in the LICENSE file included with this module.
 
