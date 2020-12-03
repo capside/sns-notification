@@ -2,7 +2,7 @@ package SNS::Notification;
   use Moo;
   use Types::Standard qw/Str/;
 
-  our $VERSION = '0.02';
+  our $VERSION = '0.03';
 
   has Timestamp => (is => 'ro', isa => Str, required => 1);
   has TopicArn => (is => 'ro', isa => Str, required => 1);
